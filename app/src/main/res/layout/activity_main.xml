@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_main_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.omniroid.currencyconverter.MainActivity">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_data"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/spn_key"
+            android:layout_width="0dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/et_keys"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/spn_key_value"
+            android:layout_width="0dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/et_values"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+
+    <ToggleButton
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_toggle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textOff="Theme Two"
+        android:textOn="Theme One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_button_background"/>
+
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/list_firebase_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+</LinearLayout>
